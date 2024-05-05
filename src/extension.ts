@@ -19,7 +19,7 @@ const InstructionDataIndices = {
 export function activate(context: vscode.ExtensionContext) {
 
 	// read instructions file
-	const extensionPath = vscode.Uri.joinPath(context.extensionUri, 'src/assets', 'instructions.json');
+	const extensionPath = vscode.Uri.joinPath(context.extensionUri, '', 'instructions.json');
 	const filePath = path.join(extensionPath.fsPath); // Convert to file system path
 	const jsonContent = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
